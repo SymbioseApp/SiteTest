@@ -1,0 +1,227 @@
+/* Définition des polices personnalisées */
+@font-face
+{
+	font-family: 'OpenSans-Regular';
+	src: url('fonts/OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'Amble-Regular';
+	src: url('fonts/Amble-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'Quicksand-Regular';
+	src: url('fonts/Quicksand-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Header */
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: #0066FF;
+	opacity: 0.7;
+	width: 100%;
+	height: 100px;
+}
+#titre_principal
+{
+	display: flex;
+	flex-direction: column;
+}
+#logo
+{
+	display: flex;
+	align-items: baseline;
+}
+#logo img
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+header h1
+{
+	font-family: 'Quicksand-Regular', serif;
+	font-size: 2.5em;
+	font-weight: normal;
+	margin: auto;
+	clear: both;
+	color: white;
+	text-align: center;
+}
+
+/* Navigation */
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+nav li
+{
+	margin-right: 15px;
+}
+nav a
+{
+	font-size: 1.3em;
+	color: white;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+nav a:hover
+{
+	color: blue;
+	border-bottom: 3px solid blue;
+}
+
+/* Bouton download */
+.bouton a
+{
+	display: block;
+	width: 150px;
+	line-height: 50px;
+	text-align: center;
+	vertical-align: middle;
+	background: url(boutonnoir.png) no-repeat;
+	color: white;
+	text-decoration: none;
+	float: left;
+	margin: 2px;
+}
+.bouton a:hover
+{
+	color: blue;
+	border-bottom: 3px solid blue;
+	background: url(boutonnoir2.png) no-repeat;
+}
+/* Eléments principaux de la page */
+body
+{
+	font-family: Verdana, Arial, sans-serif;
+	color: #000000;
+}
+#bloc_page
+{
+	width: 100%;
+	margin:auto;
+}
+footer h1, nav a
+{
+	font-family: Amble-Regular, serif;
+	font-weight: normal;
+	font-size: 1.3em;
+	text-transform: uppercase; /* passe le texte en auto en majuscules ~ lowercase */
+}
+
+/*Présentation de l'application*/
+aside
+{
+	margin-left: 40%;
+	clear: both;
+}
+aside img
+{
+	height: 300px;
+	width: 150px;
+}
+/*Blocs Actualités*/
+.Actualites
+{
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.Politics
+{
+	width: 30%;
+	height: 300px;
+	border: 1px solid #0066FF;
+	text-align: justify;
+	padding: auto;
+	margin-bottom: 10px;
+}
+.Politics h2
+{
+	text-align: center;
+}
+.Celebrities
+{
+	width: 30%;
+	height: 300px;
+	border: 1px solid #0066FF;
+	text-align: justify;
+	padding: auto;
+	margin-bottom: 10px;
+}
+.Celebrities h2
+{
+	text-align: center;
+}
+.Community
+{
+	width: 30%;
+	height: 300px;
+	border: 1px solid #0066FF;
+	text-align: justify;
+	padding: auto;
+	margin-bottom: 10px;
+}
+.Community h2
+{
+	text-align: center;
+}
+/*Footer */
+footer
+{
+	width: 100%;
+	background-color: red;
+	opacity: 0.7;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+footer li
+{
+	margin-right: 0px;
+	list-style-type: none;
+}
+footer a
+{
+	font-size: 100%;
+	color: black;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+footer a:hover
+{
+	color: blue;
+	border-bottom: 1px solid blue;
+}
+
+/* Mentions légales */
+.Legale
+{
+	width: 100%;
+	background-color: brown;
+	opacity: 0.7;
+	display: inline-flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.Legale a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	color: blue;
+	border-bottom: 1px solid blue;
+}
